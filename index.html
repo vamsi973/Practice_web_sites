@@ -2,631 +2,244 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.
-    0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CDN Link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <!-- Link style CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Evento | Easy Coding</title>
+    <title>Portfolio website complete</title>
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand fixed-top">
-      <a href="" class="navbar-brand"><span>E</span>vento</a>
-      <div>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#ContactPopup"
-              class="nav-link"
-              >Contact</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#SignupPopup"
-              class="nav-link"
-              >Signup</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopup"
-              class="nav-link"
-              >Login</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <section>
-      <div class="header">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
         <div>
-          <div class="img">
-            <!-- <img src="images/header.jpg" alt=""> -->
-
-            <div
-              id="carouselExampleInterval"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img
-                    src="images/header.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img
-                    src="images/header1.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/header2.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-            <!-- <img src="images/header.jpg" alt=""> -->
-          </div>
-          <div class="Overlay"></div>
+          <a href="#" class="nav__logo">Marlon</a>
         </div>
-        <div class="Content">
-          <h6>World Biggest <span>Conference</span> Starts in....</h6>
-          <p id="counter"></p>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- About us Section Start -->
-    <section class="about container-fluid">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <h6>About us</h6>
-            <h5>Lets Take The Next Step With You</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              debitis hic! Autem, unde quas minus optio numquam illo eligendi
-              officia consequatur! Fuga voluptate quibusdam tempora aut quos ea,
-              vero alias.
-            </p>
-            <button class="btn">Lets Start</button>
-          </div>
-
-          <div class="col-sm-5">
-            <div class="box">
-              <img src="images/about.png" class="img-fluid" alt="" />
-            </div>
-          </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
         </div>
-      </div>
-      <!-- Second Row -->
-      <div class="row second_row">
-        <h6>Lets Build Your Future <span>Skill</span> Now...</h6>
-      </div>
-    </section>
-    <!-- About us Section End -->
+      </nav>
+    </header>
 
-    <!-- Custom Section Start -->
-    <section>
-      <div class="custom container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <div class="box">
-              <img
-                src="images/custom1.jpg
-                        "
-                class="img-fluid"
-                alt=""
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Marlon</span><br />
+            Web Designer
+          </h1>
+
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
               />
-            </div>
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="assets/img/perfil.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
           </div>
 
-          <div class="col-sm-4">
-            <h6>Have fun</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
+          <div>
+            <h2 class="about__subtitle">I'am Marlon</h2>
+            <p class="about__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
+              ut voluptates soluta, aut earum nemo recusandae cumque
+              perferendis! Recusandae alias accusamus atque.
             </p>
-            <a href="#">Learn More</a>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/custom2.jpg" class="img-fluid" alt="" />
-            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Second Row -->
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <h6>Great Speaker</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+              optio id vero amet, alias architecto consectetur error eum eaque
+              sit.
             </p>
-            <a href="#">Learn More</a>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/custom3.jpg" class="img-fluid" alt="" />
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
             </div>
           </div>
 
-          <div class="col-sm-4">
-            <h6>Great knowledge</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
-            </p>
-            <a href="#">Learn More</a>
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
           </div>
         </div>
+      </section>
 
-        <!-- Third Row -->
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
 
-        <div class="row third_row">
-          <h6>Build Your Great <span>Personality</span></h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="work__container bd-grid">
+          <a href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work2.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work3.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work4.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work5.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work6.jpg" alt="" />
+          </a>
         </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input type="button" value="Send" class="contact__button button" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Marlon</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
       </div>
-    </section>
-    <!-- Custom Section End -->
-
-    <!-- Second Header Start -->
-    <section>
-      <div class="second_header">
-        <div>
-          <div class="img">
-            <img src="images/second_header.jpg" class="img-fluid" alt="" />
-            <div class="Overlay"></div>
-          </div>
-          <div class="SecondHeaderContent">
-            <h6>Conference Start in</h6>
-            <p id="counter1"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Second Header End -->
-
-    <!-- Join The Event -->
-    <section>
-      <div class="join container">
-        <div class="row justify-content-center">
-          <div class="col-sm-5">
-            <div class="box">
-              <img src="images/join.jpg" class="img-fluid" alt="" />
-            </div>
-          </div>
-
-          <div class="col-sm-5">
-            <h6>Join Event</h6>
-            <h5>We Create And Turn Into <span>Reality</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-              doloribus minus aliquid explicabo nobis, quod molestiae dicta
-              assumenda. Aperiam deserunt error molestiae perferendis officiis,
-              quos atque id nulla vel illo! <br /><br />Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Inventore, adipisci quam
-              laudantium dolorem sapiente consequuntur voluptates explicabo
-              dolorum nemo minus. Enim dolorem deserunt repellat eveniet veniam,
-              quasi ut? Ea, atque. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Esse, delectus labore! Veritatis earum debitis,
-              eos qui hic minima quia quibusdam optio, a perspiciatis fugiat!
-              Distinctio harum beatae totam laudantium numquam?
-            </p>
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Join The Event -->
-
-    <!-- Speaker Section Start -->
-    <section>
-      <div class="speaker container">
-        <div class="content">
-          <h6>Listen To Our Speakers</h6>
-          <h5>Who's Speaking</h5>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker1.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker2.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker3.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second -->
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker4.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker5.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker6.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Aman</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Speaker Section End -->
-
-    <!-- Our News Section Start -->
-    <section>
-      <div class="news container">
-        <div class="content">
-          <h6>News Update</h6>
-          <h5>Our Latest News</h5>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/news1.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 mid">
-            <div class="box">
-              <img src="images/news2.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/news3.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our News Section End -->
-
-    <!-- Footer Start -->
-    <footer>
-      <a href="#">&copy; ninja</a>
+      <p class="footer__copy">&#169; All rigths reserved</p>
     </footer>
 
-    <!-- Popup Section Start -->
-    <section>
-      <!-- Popup For Login -->
-      <div class="modal fade" id="loginPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Login Now</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Password</label>
-                        <input
-                          type="password"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Password"
-                        />
-                      </div>
-                      <button class="btn">Login Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Login -->
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-      <!-- Popup For Contact us -->
-      <div class="modal fade" id="ContactPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Contact us</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Name</label>
-                        <input
-                          type="text"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">How We Can Help You</label>
-                        <textarea
-                          class="form-control font-weight-bold"
-                          required
-                          rows="6"
-                          placeholder="How We Can Help You"
-                        ></textarea>
-                      </div>
-                      <button class="btn">Submit Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Contact us -->
-
-      <!-- Popup For Signup -->
-      <div class="modal fade" id="SignupPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Signup Now</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Name</label>
-                        <input
-                          type="text"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Password</label>
-                        <input
-                          type="password"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Password"
-                        />
-                      </div>
-                      <button class="btn">Signup Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Signup -->
-    </section>
-    <!-- Popup Section End -->
-
-    <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-      //Navbar
-      $(document).scroll(function () {
-        $(".navbar").toggleClass(
-          "scroll",
-          $(this).scrollTop() > $(".navbar").height()
-        );
-      });
-
-      //Counter
-      var deadline = new Date("july 25 2022 12:37:25").getTime();
-      //console.log(deadline)
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var t = deadline - now;
-        //console.log(t)
-
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var Hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var Minute = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-
-        var Seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("counter").innerHTML =
-          days + "d-" + Hours + "h-" + Minute + "M-" + Seconds + "s";
-
-        //
-        document.getElementById("counter1").innerHTML =
-          days + "d-" + Hours + "h-" + Minute + "M-" + Seconds + "s";
-
-        if (t < 0) {
-          clearInterval(x);
-          document.getElementById("counter").innerHTML = "EXPIRED";
-        }
-
-        if (t < 0) {
-          clearInterval(x);
-          document.getElementById("counter1").innerHTML = "EXPIRED";
-        }
-      });
-    </script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
