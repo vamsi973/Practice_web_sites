@@ -3,630 +3,242 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.
-    0"
-    />
-
-    <!-- Bootstrap CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Box Icons -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-
-    <!-- Link style CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Evento | Easy Coding</title>
   </head>
-
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand fixed-top">
-      <a href="" class="navbar-brand"><span>E</span>vento</a>
-      <div>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+    <header>
+      <a href="#" class="logo">Coding Home</a>
 
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#ContactPopup"
-              class="nav-link"
-              >Contact</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#SignupPopup"
-              class="nav-link"
-              >Signup</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href=""
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopup"
-              class="nav-link"
-              >Login</a
-            >
-          </li>
-        </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+    </header>
+    <!-- Home -->
+
+    <section class="home" id="home">
+      <div class="social">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-dribbble"></i></a>
+        <a href="#"><i class="bx bxl-behance"></i></a>
       </div>
-    </nav>
-
-    <!-- Header -->
-    <section>
-      <div class="header">
-        <div>
-          <div class="img">
-            <!-- <img src="images/header.jpg" alt=""> -->
-
-            <div
-              id="carouselExampleInterval"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img
-                    src="images/header.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img
-                    src="images/header1.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/header2.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-            <!-- <img src="images/header.jpg" alt=""> -->
-          </div>
-          <div class="Overlay"></div>
+      <div class="home-img">
+        <img src="11.png" alt="" />
+      </div>
+      <div class="home-text">
+        <span>Hello, I'm</span>
+        <h1>Ninja webTech</h1>
+        <h2>Frontend Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet cons <br />
+          adipisicing elit. Minima, consectetur <br />
+          ullam?
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+      </div>
+      <!-- About Content -->
+      <div class="about-container">
+        <div class="about-img">
+          <img src="121.jpg" alt="" />
         </div>
-        <div class="Content">
-          <h6>World Biggest <span>Conference</span> Starts in....</h6>
-          <p id="counter"></p>
+        <div class="about-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+            beatae eius quae ab consequatur est perferendis dicta. Ad
+            repellendus perferendis minus sunt error eos dicta enim accusantium
+            ipsum veniam debitis quasi sint cum fugiat porro quam, blanditiis a
+            ratione quod!
+          </p>
+          <div class="information">
+            <!-- Box 1 -->
+            <div class="info-box">
+              <i class="bx bxs-user"></i>
+              <span>Tasnia ram</span>
+            </div>
+            <!-- Box 2 -->
+            <div class="info-box">
+              <i class="bx bxs-phone"></i>
+              <span>+1 444 444 4444</span>
+            </div>
+            <!-- Box 3 -->
+            <div class="info-box">
+              <i class="bx bxs-envelope"></i>
+              <span>project@ram.com</span>
+            </div>
+          </div>
+          <a href="#" class="btn">Download Cv</a>
         </div>
       </div>
     </section>
-
-    <!-- About us Section Start -->
-    <section class="about container-fluid">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <h6>About us</h6>
-            <h5>Lets Take The Next Step With You</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              debitis hic! Autem, unde quas minus optio numquam illo eligendi
-              officia consequatur! Fuga voluptate quibusdam tempora aut quos ea,
-              vero alias.
-            </p>
-            <button class="btn">Lets Start</button>
-          </div>
-
-          <div class="col-sm-5">
-            <div class="box">
-              <img src="images/about.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
       </div>
-      <!-- Second Row -->
-      <div class="row second_row">
-        <h6>Lets Build Your Future <span>Skill</span> Now...</h6>
-      </div>
-    </section>
-    <!-- About us Section End -->
-
-    <!-- Custom Section Start -->
-    <section>
-      <div class="custom container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <div class="box">
-              <img
-                src="images/custom1.jpg
-                        "
-                class="img-fluid"
-                alt=""
-              />
-            </div>
+      <!-- Skills Content -->
+      <div class="skills-container">
+        <div class="bars">
+          <!-- Box 1 -->
+          <div class="bars-box">
+            <h3>HTML</h3>
+            <span>94%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar html-bar"></div>
           </div>
-
-          <div class="col-sm-4">
-            <h6>Have fun</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
-            </p>
-            <a href="#">Learn More</a>
+          <!-- Box 2 -->
+          <div class="bars-box">
+            <h3>CSS</h3>
+            <span>84%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar css-bar"></div>
           </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/custom2.jpg" class="img-fluid" alt="" />
-            </div>
+          <!-- Box 3 -->
+          <div class="bars-box">
+            <h3>JavaScript</h3>
+            <span>74%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar js-bar"></div>
+          </div>
+          <!-- Box 4 -->
+          <div class="bars-box">
+            <h3>React</h3>
+            <span>80%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar react-bar"></div>
           </div>
         </div>
-
-        <!-- Second Row -->
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <h6>Great Speaker</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/custom3.jpg" class="img-fluid" alt="" />
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <h6>Great knowledge</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae temporibus, blanditiis facilis eum quae, asperiores
-              iusto deserunt eaque dolorem voluptate delectus libero saepe non
-              obcaecati veniam, vel tempore quia reiciendis? <br /><br />Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Similique
-              voluptatibus est doloribus vero sapiente, tempora voluptate autem
-              deserunt perspiciatis accusamus nam dignissimos laboriosam atque
-              recusandae quibusdam ullam numquam eligendi voluptatem?
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Third Row -->
-
-        <div class="row third_row">
-          <h6>Build Your Great <span>Personality</span></h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="skills-img">
+          <img src="123.png" alt="" />
         </div>
       </div>
     </section>
-    <!-- Custom Section End -->
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="heading">
+        <h2>Services</h2>
+        <span>Our Services</span>
+      </div>
+      <div class="services-content">
+        <!-- Box 1 -->
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 2 -->
+        <div class="services-box">
+          <i class="bx bx-server"></i>
+          <h3>Backend Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 3 -->
+        <div class="services-box">
+          <i class="bx bx-brush"></i>
+          <h3>UI/UX Design</h3>
+          <a href="#">Learn More</a>
+        </div>
 
-    <!-- Second Header Start -->
-    <section>
-      <div class="second_header">
-        <div>
-          <div class="img">
-            <img src="images/second_header.jpg" class="img-fluid" alt="" />
-            <div class="Overlay"></div>
-          </div>
-          <div class="SecondHeaderContent">
-            <h6>Conference Start in</h6>
-            <p id="counter1"></p>
-          </div>
+        <div class="services-box">
+          <i class="bx bxl-wordpress"></i>
+          <h3>Wordpress Developer</h3>
+          <a href="#">Learn More</a>
         </div>
       </div>
     </section>
-    <!-- Second Header End -->
-
-    <!-- Join The Event -->
-    <section>
-      <div class="join container">
-        <div class="row justify-content-center">
-          <div class="col-sm-5">
-            <div class="box">
-              <img src="images/join.jpg" class="img-fluid" alt="" />
-            </div>
-          </div>
-
-          <div class="col-sm-5">
-            <h6>Join Event</h6>
-            <h5>We Create And Turn Into <span>Reality</span></h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-              doloribus minus aliquid explicabo nobis, quod molestiae dicta
-              assumenda. Aperiam deserunt error molestiae perferendis officiis,
-              quos atque id nulla vel illo! <br /><br />Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Inventore, adipisci quam
-              laudantium dolorem sapiente consequuntur voluptates explicabo
-              dolorum nemo minus. Enim dolorem deserunt repellat eveniet veniam,
-              quasi ut? Ea, atque. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Esse, delectus labore! Veritatis earum debitis,
-              eos qui hic minima quia quibusdam optio, a perspiciatis fugiat!
-              Distinctio harum beatae totam laudantium numquam?
-            </p>
-            <button class="btn">Read More</button>
-          </div>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading">
+        <h2>Portfolio</h2>
+        <span>Our Recent Work</span>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-img">
+          <img src="blog-2.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-3.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-4.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-5.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-6.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-7.jpg" alt="" />
         </div>
       </div>
     </section>
-    <!-- Join The Event -->
-
-    <!-- Speaker Section Start -->
-    <section>
-      <div class="speaker container">
-        <div class="content">
-          <h6>Listen To Our Speakers</h6>
-          <h5>Who's Speaking</h5>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker1.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker2.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker3.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second -->
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker4.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker5.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Andrews</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/EventSpeaker6.jpg" class="img-fluid" alt="" />
-              <div class="Overlay"></div>
-              <div class="boxContent">
-                <h6>Aman</h6>
-                <h5>Founder & CEO</h5>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" name="" id="" placeholder="Your Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write Message Here..."
+          ></textarea>
+          <input type="button" value="Send" class="contact-button" />
+        </form>
       </div>
     </section>
-    <!-- Speaker Section End -->
-
-    <!-- Our News Section Start -->
-    <section>
-      <div class="news container">
-        <div class="content">
-          <h6>News Update</h6>
-          <h5>Our Latest News</h5>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/news1.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 mid">
-            <div class="box">
-              <img src="images/news2.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box">
-              <img src="images/news3.jpg" class="img-fluid" alt="" />
-              <div class="boxContent">
-                <h6>How To Make Complete Website</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  debitis iure reprehenderit, odit ad eum.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Coding Home</h2>
+      <div class="footer-social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
       </div>
-    </section>
-    <!-- Our News Section End -->
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>
+        Create By
+        <a href="https://www.instagram.com/ninja_webtech/"
+          >Ninja webTech Developer</a
+        >
+        | All Right Reserved.
+      </p>
+    </div>
 
-    <!-- Footer Start -->
-    <footer>
-      <a href="#">&copy; ninja</a>
-    </footer>
-
-    <!-- Popup Section Start -->
-    <section>
-      <!-- Popup For Login -->
-      <div class="modal fade" id="loginPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Login Now</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Password</label>
-                        <input
-                          type="password"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Password"
-                        />
-                      </div>
-                      <button class="btn">Login Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Login -->
-
-      <!-- Popup For Contact us -->
-      <div class="modal fade" id="ContactPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Contact us</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Name</label>
-                        <input
-                          type="text"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">How We Can Help You</label>
-                        <textarea
-                          class="form-control font-weight-bold"
-                          required
-                          rows="6"
-                          placeholder="How We Can Help You"
-                        ></textarea>
-                      </div>
-                      <button class="btn">Submit Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Contact us -->
-
-      <!-- Popup For Signup -->
-      <div class="modal fade" id="SignupPopup">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="modal_content">
-                  <h6>Signup Now</h6>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-sm-11">
-                    <form action="">
-                      <div class="form-group">
-                        <label for="">Name</label>
-                        <input
-                          type="text"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Name"
-                        />
-                      </div>
-
-                      <div class="form-group">
-                        <label for="">Email</label>
-                        <input
-                          type="email"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="">Password</label>
-                        <input
-                          type="password"
-                          required
-                          class="font-weight-bold form-control"
-                          placeholder="Enter Your Password"
-                        />
-                      </div>
-                      <button class="btn">Signup Now</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Popup For Signup -->
-    </section>
-    <!-- Popup Section End -->
-
-    <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-      //Navbar
-      $(document).scroll(function () {
-        $(".navbar").toggleClass(
-          "scroll",
-          $(this).scrollTop() > $(".navbar").height()
-        );
-      });
-
-      //Counter
-      var deadline = new Date("july 25 2022 12:37:25").getTime();
-      //console.log(deadline)
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var t = deadline - now;
-        //console.log(t)
-
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var Hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var Minute = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-
-        var Seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("counter").innerHTML =
-          days + "d-" + Hours + "h-" + Minute + "M-" + Seconds + "s";
-
-        //
-        document.getElementById("counter1").innerHTML =
-          days + "d-" + Hours + "h-" + Minute + "M-" + Seconds + "s";
-
-        if (t < 0) {
-          clearInterval(x);
-          document.getElementById("counter").innerHTML = "EXPIRED";
-        }
-
-        if (t < 0) {
-          clearInterval(x);
-          document.getElementById("counter1").innerHTML = "EXPIRED";
-        }
-      });
-    </script>
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
